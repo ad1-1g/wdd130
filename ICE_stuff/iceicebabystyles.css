@@ -1,0 +1,32 @@
+body {
+    background-color: #5CA0D7;
+    text-align: center;
+    margin-left: 550px;
+    margin-right: 550px;
+}
+
+h1 {
+    font-size: xx-large;
+    color: white;
+    
+}
+
+h1:hover {
+    color:black
+}
+
+ol {
+    color:black;
+    font-weight: bold;
+    text-align: left;
+}
+
+p {
+    font-size: xx-large ;
+    color: white;
+}
+
+footer {
+    color: black
+}
+
