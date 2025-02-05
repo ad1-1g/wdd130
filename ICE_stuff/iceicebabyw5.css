@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    background-color: #444444;
+}
+
+.background img {
+    width: 100%;
+}
+
+.circle {
+    border-radius: 100%;
+    overflow: hidden;
+    height: 120px;
+    border: 8px solid #444444;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-section {
+    text-align: center;
+    padding: 40px;
+    display: flex;
+}

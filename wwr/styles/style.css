@@ -27,6 +27,11 @@ header {
     text-align: center;
 }
 
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 nav a {
     color: var(--accent-color);
     text-decoration: none;
@@ -76,6 +81,11 @@ nav a {
     padding: 2rem;
 }
 
+.icon,
+.logo {
+    width: 80px;
+}
+
 .rivers-card,
 .camping-card,
 .rapids-card {
@@ -93,7 +103,7 @@ nav a {
     height: 50vh;
     padding: 30px 60px;
     box-sizing: border-box;
-    text-align: center;
+    text-align: center  ;
 }
 
 /* Button Styles */
