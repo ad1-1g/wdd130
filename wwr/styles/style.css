@@ -11,6 +11,9 @@
 /* Had Deepseek help me with the root selector*/
 
 /* Base Styles */
+
+/* div#content>div*4 */
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -94,6 +97,8 @@ nav a {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     text-align: center;
+    padding: 10px;
+
 }
 .mountains {
     width: 100%;
@@ -104,6 +109,7 @@ nav a {
     padding: 30px 60px;
     box-sizing: border-box;
     text-align: center  ;
+    color: var(--light-bg)
 }
 
 /* Button Styles */
