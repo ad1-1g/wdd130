@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+    background-color: #222; /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto Slab', serif;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 350px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+}
+
+.card-content p {
+    color: #888;
+    font-size: 1rem;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #2b4866;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-family: "Times New Roman", serif;
+}
+
+footer div {
+    font-size: 1rem;
+}
+
+footer div span {
+    font-weight: bold;
+    display: block;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,17 @@
+#product-gallery {
+    display: grid
+
+}
+    
+
+@media screen and (max-width: 650px) {
+    #product-gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #product-gallery {
+        grid-template-columns: 1fr;
+    }
+}
