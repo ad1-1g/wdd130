@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ADHG Rafting Extravaganza</title>
+    <link type="text/css" rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Dry Oar Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="faq.html">FAQ</a>
+                <a href="site-plan-rafting.html">Site Plan</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </header>
+        
+        <div class="contact-hero">
+            <div class="hero-box">
+                <img class="hero-img" src="images/hero.png" alt="People rafting together">
+            </div>
+            <div class="hero-msg">
+                <h1 class="contact-title">Contact Us</h1>
+                <h4>We'd Love to Hear From You!</h4>
+            </div>
+        </div>
+        
+        <main class="contact-content">
+            <section class="form-container">
+                <h2>Book Your Adventure</h2>
+                <p>Fill out the form below and we'll get back to you within 24 hours to confirm your booking details.</p>
+                
+                <form action="submit_form.php" method="post" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Preferred Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="group-size">Group Size:</label>
+                        <select id="group-size" name="group-size" required>
+                            <option value="">Select an option</option>
+                            <option value="1-5">1-5 people</option>
+                            <option value="6-10">6-10 people</option>
+                            <option value="11-20">11-20 people</option>
+                            <option value="21+">21+ people</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="adventure">Adventure Type:</label>
+                        <select id="adventure" name="adventure" required>
+                            <option value="">Select an option</option>
+                            <option value="half-day">Half-Day Adventure</option>
+                            <option value="full-day">Full-Day Adventure</option>
+                            <option value="overnight">Overnight Trip</option>
+                            <option value="multi-day">Multi-Day Expedition</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="message">Special Requests:</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <button type="submit" class="submit-btn">Book Adventure</button>
+                    </div>
+                </form>
+            </section>
+            
+            <section class="contact-info">
+                <h2>Other Ways to Reach Us</h2>
+                <div class="info-container">
+                    <div class="info-item">
+                        <h3>Phone</h3>
+                        <p>(555) 123-4567</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <p>adventures@dryoar.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Address</h3>
+                        <p>123 River Way<br>Rapids City, RC 98765</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Dry Oar &copy; 2025 - Easton Thompson</p>
+            <p><a href="site-plan-rafting.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
