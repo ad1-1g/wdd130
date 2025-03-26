@@ -211,8 +211,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Main Content Styles */
 .main-content {
-    padding: 40px 20px 80px;
-    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .main-content nav {
@@ -288,24 +290,40 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
+/* Gallery Container */
 .gallery {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px; /* Increased spacing between items */
+    justify-content: center; /* Ensures the gallery is centered */
+    align-items: center; /* Vertically centers items */
+    padding: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* Gallery Item */
 .gallery-item {
-    position: relative;
-    overflow: hidden;
-    transition: all 0.5s ease;
-    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+    width: 100%;
+    max-width: 300px; /* Ensures images don’t stretch too wide */
+    transition: transform 0.3s ease-in-out;
+    text-align: center; /* Centers content inside each item */
+    padding: 20px; /* Added padding around the content */
 }
 
+/* Image Styling */
 .gallery-item img {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.5s ease;
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    padding: 10px;;
+}
+
+/* Hover Effect */
+.gallery-item:hover {
+    transform: scale(1.1);
 }
 
 .gallery-item::before {
@@ -319,6 +337,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
     transition: opacity 0.5s ease;
     z-index: 1;
+    pointer-events: none;
 }
 
 .gallery-item:hover img {
@@ -341,6 +360,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
     transition: all 0.5s ease;
     z-index: 2;
+    pointer-events: none;
 }
 
 .gallery-item:hover::after {
